@@ -21,7 +21,7 @@
 
   <div class="left" style="background-color:yellow;">
 
-    <form action="/action_page.php">
+    <form>
       <fieldset>
 
         <label for="Username">Username</label><br>
@@ -36,33 +36,7 @@
     </form>
   </div>
   <div class="middle" style="background-color:white;">
-<script>
-  var myvideo = document.getElementById("lego.mp4")
 
-  function playpause(){
-    if (myVideo.paused)
-    myVideo.play();
-    else {
-      myVideo.pause();
-    }
-    function.makeBig(){
-      myVideo.width=560;
-    }
-    function.makeSmall(){
-      myVideo.width=320;
-    }
-    function.makeNormal(){
-      myVideo.width=420;
-    }
-  }
-</script>
-
-    <div class="video-player">
-    <button onclick="playpause()">play/pause</button>
-    <button onclick="makeBig()">Big</button>
-    <button onclick="makeSmall()">Small</button>
-    <button onclick="makeNormal()">Normal</button>
-  </div>
   <br>
   <video  width="100px" height="100px"autoplay muted controls="controls">
     <source src="videos/lego.mp4" type="video/mp4" controls>
@@ -71,6 +45,7 @@
   </div>
   <div class="right" style="background-color:yellow;">
     <p> thanks for visting</p>
+    <br>
   </div>
 
   <div class="footer">
