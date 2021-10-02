@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+
+<style>
+
+
+</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<div class="grid-container">
+  <div class="header">
+    <h2>Sign up for more videos</h2>
+  </div>
+
+  <div class="left" style="background-color:yellow;">
+
+    <form action="/action_page.php">
+      <fieldset>
+
+        <label for="Username">Username</label><br>
+          <input type="text" id="Username" name="Username" placeholder="Username"><br>
+        <label for="password">password</label><br>
+        <input type="text" id="password" name="password" placeholder="password"><br>
+        <label for="email">email</label><br>
+        <input type="email" id="email" name="email" placeholder="email"><br>
+        <label for="submit"></label><br>
+        <input type="submit" value="submit"><br>
+        </fieldset>
+    </form>
+  </div>
+  <div class="middle" style="background-color:white;">
+<script>
+  var myvideo = document.getElementById("lego.mp4")
+
+  function playpause(){
+    if (myVideo.paused)
+    myVideo.play();
+    else {
+      myVideo.pause();
+    }
+    function.makeBig(){
+      myVideo.width=560;
+    }
+    function.makeSmall(){
+      myVideo.width=320;
+    }
+    function.makeNormal(){
+      myVideo.width=420;
+    }
+  }
+</script>
+
+    <div class="video-player">
+    <button onclick="playpause()">play/pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+  </div>
+  <br>
+  <video  width="100px" height="100px"autoplay muted controls="controls">
+    <source src="videos/lego.mp4" type="video/mp4" controls>
+  </video>
+
+  </div>
+  <div class="right" style="background-color:yellow;">
+    <p> thanks for visting</p>
+  </div>
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+</div>
+
+</body>
+</html>
